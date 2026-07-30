@@ -75,6 +75,13 @@
 
 <br>
 
+## 🖥️ From My Terminal
+ 
+<div align="center">
+<img src="./terminal.svg" alt="Animated terminal" width="600" />
+</div>
+<br>
+
 ## 🐍 Contribution Activity
 
 <div align="center">
