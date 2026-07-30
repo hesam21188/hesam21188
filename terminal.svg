@@ -1,0 +1,58 @@
+<svg viewBox="0 0 600 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="termGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#711c91"/>
+      <stop offset="50%" stop-color="#ea00d9"/>
+      <stop offset="100%" stop-color="#0abdc6"/>
+    </linearGradient>
+    <filter id="neonGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="4" y="4" width="592" height="242" rx="14" fill="#0d0d16" stroke="url(#termGlow)" stroke-width="1.5" filter="url(#neonGlow)"/>
+
+  <rect x="4" y="4" width="592" height="34" rx="14" fill="#16161f"/>
+  <rect x="4" y="24" width="592" height="14" fill="#16161f"/>
+
+  <circle cx="28" cy="21" r="6" fill="#ff5f56"/>
+  <circle cx="48" cy="21" r="6" fill="#ffbd2e"/>
+  <circle cx="68" cy="21" r="6" fill="#27c93f"/>
+  <text x="300" y="26" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="12" fill="#8b8b9e">amir-hesam — zsh</text>
+
+  <g font-family="Menlo, Consolas, monospace" font-size="16">
+    <text x="24" y="76" fill="#0abdc6">$ whoami</text>
+
+    <g opacity="0">
+      <text x="24" y="102" fill="#ea00d9">amir-hesam</text>
+      <animate attributeName="opacity" begin="0.5s" dur="0.4s" to="1" fill="freeze"/>
+    </g>
+
+    <g opacity="0">
+      <text x="24" y="142" fill="#0abdc6">$ cat stack.txt</text>
+      <animate attributeName="opacity" begin="1.5s" dur="0.4s" to="1" fill="freeze"/>
+    </g>
+    <g opacity="0">
+      <text x="24" y="168" fill="#ea00d9">Go · Python · Django · React</text>
+      <animate attributeName="opacity" begin="2.0s" dur="0.4s" to="1" fill="freeze"/>
+    </g>
+
+    <g opacity="0">
+      <text x="24" y="208" fill="#0abdc6">$ echo $STATUS</text>
+      <animate attributeName="opacity" begin="3.0s" dur="0.4s" to="1" fill="freeze"/>
+    </g>
+    <g opacity="0">
+      <text x="24" y="234" fill="#ffffff">Building clean, reliable backend systems</text>
+      <animate attributeName="opacity" begin="3.5s" dur="0.4s" to="1" fill="freeze"/>
+    </g>
+  </g>
+
+  <rect x="420" y="218" width="10" height="18" fill="#ea00d9" opacity="0">
+    <animate attributeName="opacity" begin="3.5s" dur="0.01s" to="1" fill="freeze"/>
+    <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.4;0.4;0.9;1" dur="1s" begin="3.9s" repeatCount="indefinite"/>
+  </rect>
+</svg>
